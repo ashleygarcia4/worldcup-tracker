@@ -10,6 +10,7 @@ DB_CONFIG = {
     "user": os.getenv("DB_USER"),
     "host": os.getenv("DB_HOST"),
     "port": os.getenv("DB_PORT"),
+    "password": os.getenv("DB_PASSWORD"),
 }
 
 app = FastAPI()
@@ -52,3 +53,4 @@ def get_matches(team: str = None):
             "away_score": row[5],
         })
     return results
+

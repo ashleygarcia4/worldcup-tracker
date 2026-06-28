@@ -11,6 +11,7 @@ DB_CONFIG = {
     "host": os.getenv("DB_HOST"),
     "port": os.getenv("DB_PORT"),
     "password": os.getenv("DB_PASSWORD"),
+    "sslmode": "require",
 }
 
 app = FastAPI()
